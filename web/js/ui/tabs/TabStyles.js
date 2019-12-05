@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class TabStyles {
+}
+exports.TabStyles = TabStyles;
+TabStyles.TAB_NAV = {
+    height: '35px'
+};
+TabStyles.WEBVIEW = {
+    height: 'calc(100% - 35px)',
+    width: '100%'
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFiU3R5bGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGFiU3R5bGVzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBYSxTQUFTOztBQUF0Qiw4QkFXQztBQVRpQixpQkFBTyxHQUF3QjtJQUN6QyxNQUFNLEVBQUUsTUFBTTtDQUNqQixDQUFDO0FBRVksaUJBQU8sR0FBd0I7SUFDekMsTUFBTSxFQUFFLG1CQUFtQjtJQUMzQixLQUFLLEVBQUUsTUFBTTtDQUNoQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIFRhYlN0eWxlcyB7XG5cbiAgICBwdWJsaWMgc3RhdGljIFRBQl9OQVY6IFJlYWN0LkNTU1Byb3BlcnRpZXMgPSB7XG4gICAgICAgIGhlaWdodDogJzM1cHgnXG4gICAgfTtcblxuICAgIHB1YmxpYyBzdGF0aWMgV0VCVklFVzogUmVhY3QuQ1NTUHJvcGVydGllcyA9IHtcbiAgICAgICAgaGVpZ2h0OiAnY2FsYygxMDAlIC0gMzVweCknLFxuICAgICAgICB3aWR0aDogJzEwMCUnXG4gICAgfTtcblxufVxuIl19

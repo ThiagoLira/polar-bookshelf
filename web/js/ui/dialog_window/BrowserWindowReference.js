@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class BrowserWindowReference {
+    constructor(id) {
+        this.id = id;
+    }
+}
+exports.BrowserWindowReference = BrowserWindowReference;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnJvd3NlcldpbmRvd1JlZmVyZW5jZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkJyb3dzZXJXaW5kb3dSZWZlcmVuY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxNQUFhLHNCQUFzQjtJQUkvQixZQUFZLEVBQVU7UUFDbEIsSUFBSSxDQUFDLEVBQUUsR0FBRyxFQUFFLENBQUM7SUFDakIsQ0FBQztDQUVKO0FBUkQsd0RBUUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgQnJvd3NlcldpbmRvd1JlZmVyZW5jZSB7XG5cbiAgICBwdWJsaWMgcmVhZG9ubHkgaWQ6IG51bWJlcjtcblxuICAgIGNvbnN0cnVjdG9yKGlkOiBudW1iZXIpIHtcbiAgICAgICAgdGhpcy5pZCA9IGlkO1xuICAgIH1cblxufVxuIl19

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Points {
+    static relativeTo(origin, point) {
+        return {
+            x: Math.round(point.x - origin.x),
+            y: Math.round(point.y - origin.y)
+        };
+    }
+}
+exports.Points = Points;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUG9pbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUG9pbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBYSxNQUFNO0lBT1IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxNQUFhLEVBQUUsS0FBWTtRQUVoRCxPQUFPO1lBQ0gsQ0FBQyxFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUMsR0FBRyxNQUFNLENBQUMsQ0FBQyxDQUFDO1lBQ2pDLENBQUMsRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDLEdBQUcsTUFBTSxDQUFDLENBQUMsQ0FBQztTQUNwQyxDQUFDO0lBRU4sQ0FBQztDQUVKO0FBaEJELHdCQWdCQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7UG9pbnR9IGZyb20gJy4vUG9pbnQnO1xuXG5leHBvcnQgY2xhc3MgUG9pbnRzIHtcblxuICAgIC8qKlxuICAgICAqIEFzc3VtZSB0aGF0IHRoZSBnaXZlbiByZWN0IGlzIHJlbGF0aXZlIHRvIHRoZSBwb2ludCBhbmQgcmV0dXJuIHRoZSBuZXdcbiAgICAgKiByZWN0LlxuICAgICAqXG4gICAgICovXG4gICAgcHVibGljIHN0YXRpYyByZWxhdGl2ZVRvKG9yaWdpbjogUG9pbnQsIHBvaW50OiBQb2ludCk6IFBvaW50IHtcblxuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgeDogTWF0aC5yb3VuZChwb2ludC54IC0gb3JpZ2luLngpLFxuICAgICAgICAgICAgeTogTWF0aC5yb3VuZChwb2ludC55IC0gb3JpZ2luLnkpXG4gICAgICAgIH07XG5cbiAgICB9XG5cbn1cbiJdfQ==

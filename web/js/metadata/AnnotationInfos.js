@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const AnnotationInfo_1 = require("./AnnotationInfo");
+class AnnotationInfos {
+    static create() {
+        const result = Object.create(AnnotationInfo_1.AnnotationInfo.prototype);
+        result.init(result);
+        return result;
+    }
+}
+exports.AnnotationInfos = AnnotationInfos;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQW5ub3RhdGlvbkluZm9zLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQW5ub3RhdGlvbkluZm9zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEscURBQWdEO0FBRWhELE1BQWEsZUFBZTtJQUVqQixNQUFNLENBQUMsTUFBTTtRQUVoQixNQUFNLE1BQU0sR0FBbUIsTUFBTSxDQUFDLE1BQU0sQ0FBQywrQkFBYyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3ZFLE1BQU0sQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUM7UUFFcEIsT0FBTyxNQUFNLENBQUM7SUFFbEIsQ0FBQztDQUdKO0FBWkQsMENBWUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0Fubm90YXRpb25JbmZvfSBmcm9tICcuL0Fubm90YXRpb25JbmZvJztcblxuZXhwb3J0IGNsYXNzIEFubm90YXRpb25JbmZvcyB7XG5cbiAgICBwdWJsaWMgc3RhdGljIGNyZWF0ZSgpIHtcblxuICAgICAgICBjb25zdCByZXN1bHQ6IEFubm90YXRpb25JbmZvID0gT2JqZWN0LmNyZWF0ZShBbm5vdGF0aW9uSW5mby5wcm90b3R5cGUpO1xuICAgICAgICByZXN1bHQuaW5pdChyZXN1bHQpO1xuXG4gICAgICAgIHJldHVybiByZXN1bHQ7XG5cbiAgICB9XG5cblxufVxuIl19

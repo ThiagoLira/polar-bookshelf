@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class CachedRequest {
+    constructor(opts) {
+        this.url = opts.url;
+        Object.assign(this, opts);
+    }
+}
+exports.CachedRequest = CachedRequest;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FjaGVkUmVxdWVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNhY2hlZFJlcXVlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxNQUFhLGFBQWE7SUFRdEIsWUFBWSxJQUFTO1FBRWpCLElBQUksQ0FBQyxHQUFHLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQztRQUVwQixNQUFNLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRSxJQUFJLENBQUMsQ0FBQztJQUU5QixDQUFDO0NBRUo7QUFoQkQsc0NBZ0JDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIENhY2hlZFJlcXVlc3Qge1xuXG4gICAgLyoqXG4gICAgICovXG4gICAgcHVibGljIHVybDogc3RyaW5nO1xuXG4gICAgLyoqXG4gICAgICovXG4gICAgY29uc3RydWN0b3Iob3B0czogYW55KSB7XG5cbiAgICAgICAgdGhpcy51cmwgPSBvcHRzLnVybDtcblxuICAgICAgICBPYmplY3QuYXNzaWduKHRoaXMsIG9wdHMpO1xuXG4gICAgfVxuXG59XG4iXX0=

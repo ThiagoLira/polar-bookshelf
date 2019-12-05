@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class WindowChannels {
+    static create(webContents, channel) {
+        return this.createFromID(webContents.id, channel);
+    }
+    static createFromID(id, channel) {
+        return id + "::" + channel;
+    }
+}
+exports.WindowChannels = WindowChannels;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV2luZG93Q2hhbm5lbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJXaW5kb3dDaGFubmVscy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLE1BQWEsY0FBYztJQUVoQixNQUFNLENBQUMsTUFBTSxDQUFDLFdBQXdCLEVBQ3hCLE9BQWU7UUFFaEMsT0FBTyxJQUFJLENBQUMsWUFBWSxDQUFDLFdBQVcsQ0FBQyxFQUFFLEVBQUUsT0FBTyxDQUFDLENBQUM7SUFFdEQsQ0FBQztJQUVNLE1BQU0sQ0FBQyxZQUFZLENBQUMsRUFBVSxFQUFFLE9BQWU7UUFDbEQsT0FBTyxFQUFFLEdBQUcsSUFBSSxHQUFHLE9BQU8sQ0FBQztJQUMvQixDQUFDO0NBRUo7QUFiRCx3Q0FhQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBXZWJDb250ZW50cyA9IEVsZWN0cm9uLldlYkNvbnRlbnRzO1xuXG5leHBvcnQgY2xhc3MgV2luZG93Q2hhbm5lbHMge1xuXG4gICAgcHVibGljIHN0YXRpYyBjcmVhdGUod2ViQ29udGVudHM6IFdlYkNvbnRlbnRzLFxuICAgICAgICAgICAgICAgICAgICAgICAgIGNoYW5uZWw6IHN0cmluZykge1xuXG4gICAgICAgIHJldHVybiB0aGlzLmNyZWF0ZUZyb21JRCh3ZWJDb250ZW50cy5pZCwgY2hhbm5lbCk7XG5cbiAgICB9XG5cbiAgICBwdWJsaWMgc3RhdGljIGNyZWF0ZUZyb21JRChpZDogbnVtYmVyLCBjaGFubmVsOiBzdHJpbmcpIHtcbiAgICAgICAgcmV0dXJuIGlkICsgXCI6OlwiICsgY2hhbm5lbDtcbiAgICB9XG5cbn1cbiJdfQ==

@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const ProgressBar_1 = require("../../ui/progress_bar/ProgressBar");
+class CaptureWebviewApp {
+    start() {
+        this.progressBar = ProgressBar_1.ProgressBar.create();
+    }
+}
+exports.CaptureWebviewApp = CaptureWebviewApp;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FwdHVyZVdlYnZpZXdBcHAuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDYXB0dXJlV2Vidmlld0FwcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1FQUE4RDtBQUU5RCxNQUFhLGlCQUFpQjtJQUluQixLQUFLO1FBQ1IsSUFBSSxDQUFDLFdBQVcsR0FBRyx5QkFBVyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBQzVDLENBQUM7Q0FFSjtBQVJELDhDQVFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtQcm9ncmVzc0Jhcn0gZnJvbSAnLi4vLi4vdWkvcHJvZ3Jlc3NfYmFyL1Byb2dyZXNzQmFyJztcblxuZXhwb3J0IGNsYXNzIENhcHR1cmVXZWJ2aWV3QXBwIHtcblxuICAgIHByaXZhdGUgcHJvZ3Jlc3NCYXI/OiBQcm9ncmVzc0JhcjtcblxuICAgIHB1YmxpYyBzdGFydCgpIHtcbiAgICAgICAgdGhpcy5wcm9ncmVzc0JhciA9IFByb2dyZXNzQmFyLmNyZWF0ZSgpO1xuICAgIH1cblxufVxuIl19

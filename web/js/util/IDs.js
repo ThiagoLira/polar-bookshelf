@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let SEQUENCE = 0;
+class IDs {
+    static create(prefix) {
+        const seq = SEQUENCE++;
+        return `${prefix}${seq}`;
+    }
+}
+exports.IDs = IDs;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSURzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSURzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSSxRQUFRLEdBQUcsQ0FBQyxDQUFDO0FBTWpCLE1BQWEsR0FBRztJQUVMLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBYztRQUMvQixNQUFNLEdBQUcsR0FBRyxRQUFRLEVBQUUsQ0FBQztRQUV2QixPQUFPLEdBQUcsTUFBTSxHQUFHLEdBQUcsRUFBRSxDQUFDO0lBQzdCLENBQUM7Q0FFSjtBQVJELGtCQVFDIiwic291cmNlc0NvbnRlbnQiOlsibGV0IFNFUVVFTkNFID0gMDtcblxuLyoqXG4gKiBTaW1wbGUgRE9NIElEIGNyZWF0aW9uIHdpdGhvdXQgaGF2aW5nIHRvIHB1dCBndXRzIGxpa2UgdGhlIHNlcXVlbmNlIG51bWJlciBpblxuICogdGhlIG1haW4gY2xhc3MuIE1ha2VzIHN1cmUgZm9yIGEgZ2l2ZW4gcHJlZml4IHRoYXQgdGhlIElEIGlzIGFsd2F5cyB1bmlxdWVcbiAqL1xuZXhwb3J0IGNsYXNzIElEcyB7XG5cbiAgICBwdWJsaWMgc3RhdGljIGNyZWF0ZShwcmVmaXg6IHN0cmluZykge1xuICAgICAgICBjb25zdCBzZXEgPSBTRVFVRU5DRSsrO1xuXG4gICAgICAgIHJldHVybiBgJHtwcmVmaXh9JHtzZXF9YDtcbiAgICB9XG5cbn1cblxuIl19

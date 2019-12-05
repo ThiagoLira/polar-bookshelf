@@ -1,0 +1,26 @@
+"use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __importStar(require("react"));
+const DropdownItem_1 = __importDefault(require("reactstrap/lib/DropdownItem"));
+const SimpleTooltipEx_1 = require("../../../../web/js/ui/tooltip/SimpleTooltipEx");
+class AddContentDropdownItem extends React.PureComponent {
+    constructor(props, context) {
+        super(props, context);
+    }
+    render() {
+        return (React.createElement(SimpleTooltipEx_1.SimpleTooltipEx, { text: this.props.tooltip, show: 0, placement: "right" },
+            React.createElement(DropdownItem_1.default, { id: this.props.id, hidden: this.props.hidden, size: "sm", onClick: () => this.props.onClick() }, this.props.children)));
+    }
+}
+exports.AddContentDropdownItem = AddContentDropdownItem;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWRkQ29udGVudERyb3Bkb3duSXRlbS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFkZENvbnRlbnREcm9wZG93bkl0ZW0udHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUFBLDZDQUErQjtBQUsvQiwrRUFBdUQ7QUFFdkQsbUZBQThFO0FBRTlFLE1BQWEsc0JBQXVCLFNBQVEsS0FBSyxDQUFDLGFBQTZCO0lBRTNFLFlBQVksS0FBYSxFQUFFLE9BQVk7UUFDbkMsS0FBSyxDQUFDLEtBQUssRUFBRSxPQUFPLENBQUMsQ0FBQztJQUMxQixDQUFDO0lBRU0sTUFBTTtRQUVULE9BQU8sQ0FFSCxvQkFBQyxpQ0FBZSxJQUFDLElBQUksRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFDeEIsSUFBSSxFQUFFLENBQUMsRUFDUCxTQUFTLEVBQUMsT0FBTztZQUU5QixvQkFBQyxzQkFBWSxJQUFDLEVBQUUsRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLEVBQUUsRUFDakIsTUFBTSxFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxFQUN6QixJQUFJLEVBQUMsSUFBSSxFQUNULE9BQU8sRUFBRSxHQUFHLEVBQUUsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sRUFBRSxJQUU1QyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FFVCxDQUdELENBRXJCLENBQUM7SUFFTixDQUFDO0NBRUo7QUE5QkQsd0RBOEJDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHtTaW1wbGVUb29sdGlwfSBmcm9tICcuLi8uLi8uLi8uLi93ZWIvanMvdWkvdG9vbHRpcC9TaW1wbGVUb29sdGlwJztcbmltcG9ydCB7QXBwUnVudGltZX0gZnJvbSAnLi4vLi4vLi4vLi4vd2ViL2pzL0FwcFJ1bnRpbWUnO1xuaW1wb3J0IERyb3Bkb3duVG9nZ2xlIGZyb20gJ3JlYWN0c3RyYXAvbGliL0Ryb3Bkb3duVG9nZ2xlJztcbmltcG9ydCBEcm9wZG93bk1lbnUgZnJvbSAncmVhY3RzdHJhcC9saWIvRHJvcGRvd25NZW51JztcbmltcG9ydCBEcm9wZG93bkl0ZW0gZnJvbSAncmVhY3RzdHJhcC9saWIvRHJvcGRvd25JdGVtJztcbmltcG9ydCB7TWFudWFsRHJvcGRvd259IGZyb20gJy4uL2RvY19yZXBvL01hbmF1bERyb3Bkb3duJztcbmltcG9ydCB7U2ltcGxlVG9vbHRpcEV4fSBmcm9tICcuLi8uLi8uLi8uLi93ZWIvanMvdWkvdG9vbHRpcC9TaW1wbGVUb29sdGlwRXgnO1xuXG5leHBvcnQgY2xhc3MgQWRkQ29udGVudERyb3Bkb3duSXRlbSBleHRlbmRzIFJlYWN0LlB1cmVDb21wb25lbnQ8SVByb3BzLCBJU3RhdGU+IHtcblxuICAgIGNvbnN0cnVjdG9yKHByb3BzOiBJUHJvcHMsIGNvbnRleHQ6IGFueSkge1xuICAgICAgICBzdXBlcihwcm9wcywgY29udGV4dCk7XG4gICAgfVxuXG4gICAgcHVibGljIHJlbmRlcigpIHtcblxuICAgICAgICByZXR1cm4gKFxuXG4gICAgICAgICAgICA8U2ltcGxlVG9vbHRpcEV4IHRleHQ9e3RoaXMucHJvcHMudG9vbHRpcH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2hvdz17MH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2VtZW50PVwicmlnaHRcIj5cblxuICAgICAgICAgICAgICAgIDxEcm9wZG93bkl0ZW0gaWQ9e3RoaXMucHJvcHMuaWR9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBoaWRkZW49e3RoaXMucHJvcHMuaGlkZGVufVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2l6ZT1cInNtXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHRoaXMucHJvcHMub25DbGljaygpfT5cblxuICAgICAgICAgICAgICAgICAgICB7dGhpcy5wcm9wcy5jaGlsZHJlbn1cblxuICAgICAgICAgICAgICAgIDwvRHJvcGRvd25JdGVtPlxuXG5cbiAgICAgICAgICAgIDwvU2ltcGxlVG9vbHRpcEV4PlxuXG4gICAgICAgICk7XG5cbiAgICB9XG5cbn1cblxuaW50ZXJmYWNlIElQcm9wcyB7XG4gICAgcmVhZG9ubHkgaWQ6IHN0cmluZztcbiAgICByZWFkb25seSB0b29sdGlwOiBzdHJpbmc7XG4gICAgcmVhZG9ubHkgaGlkZGVuOiBib29sZWFuO1xuICAgIHJlYWRvbmx5IG9uQ2xpY2s6ICgpID0+IHZvaWQ7XG59XG5cbmludGVyZmFjZSBJU3RhdGUge1xufVxuIl19

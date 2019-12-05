@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const AnnotationType_1 = require("polar-shared/src/metadata/AnnotationType");
+class AnnotationTypes {
+    static fromString(val) {
+        return AnnotationType_1.AnnotationType[val];
+    }
+    static toDataAttribute(annotationType) {
+        return annotationType.toLowerCase().replace("_", "-");
+    }
+}
+exports.AnnotationTypes = AnnotationTypes;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQW5ub3RhdGlvblR5cGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQW5ub3RhdGlvblR5cGVzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkVBQXdFO0FBRXhFLE1BQWEsZUFBZTtJQUVqQixNQUFNLENBQUMsVUFBVSxDQUFDLEdBQVc7UUFDaEMsT0FBTywrQkFBYyxDQUFDLEdBQWtDLENBQUMsQ0FBQztJQUM5RCxDQUFDO0lBRU0sTUFBTSxDQUFDLGVBQWUsQ0FBQyxjQUE4QjtRQUN4RCxPQUFPLGNBQWMsQ0FBQyxXQUFXLEVBQUUsQ0FBQyxPQUFPLENBQUMsR0FBRyxFQUFFLEdBQUcsQ0FBQyxDQUFDO0lBQzFELENBQUM7Q0FFSjtBQVZELDBDQVVDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtBbm5vdGF0aW9uVHlwZX0gZnJvbSAncG9sYXItc2hhcmVkL3NyYy9tZXRhZGF0YS9Bbm5vdGF0aW9uVHlwZSc7XG5cbmV4cG9ydCBjbGFzcyBBbm5vdGF0aW9uVHlwZXMge1xuXG4gICAgcHVibGljIHN0YXRpYyBmcm9tU3RyaW5nKHZhbDogc3RyaW5nKSB7XG4gICAgICAgIHJldHVybiBBbm5vdGF0aW9uVHlwZVt2YWwgYXMga2V5b2YgdHlwZW9mIEFubm90YXRpb25UeXBlXTtcbiAgICB9XG5cbiAgICBwdWJsaWMgc3RhdGljIHRvRGF0YUF0dHJpYnV0ZShhbm5vdGF0aW9uVHlwZTogQW5ub3RhdGlvblR5cGUpIHtcbiAgICAgICAgcmV0dXJuIGFubm90YXRpb25UeXBlLnRvTG93ZXJDYXNlKCkucmVwbGFjZShcIl9cIiwgXCItXCIpO1xuICAgIH1cblxufVxuIl19

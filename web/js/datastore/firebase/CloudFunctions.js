@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class CloudFunctions {
+    static createEndpoint() {
+        const project = process.env.POLAR_TEST_PROJECT || "polar-cors";
+        return `https://us-central1-${project}.cloudfunctions.net`;
+    }
+}
+exports.CloudFunctions = CloudFunctions;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2xvdWRGdW5jdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDbG91ZEZ1bmN0aW9ucy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLE1BQWEsY0FBYztJQUVoQixNQUFNLENBQUMsY0FBYztRQUN4QixNQUFNLE9BQU8sR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFrQixJQUFJLFlBQVksQ0FBQztRQUMvRCxPQUFPLHVCQUF1QixPQUFPLHFCQUFxQixDQUFDO0lBQy9ELENBQUM7Q0FFSjtBQVBELHdDQU9DIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIENsb3VkRnVuY3Rpb25zIHtcblxuICAgIHB1YmxpYyBzdGF0aWMgY3JlYXRlRW5kcG9pbnQoKSB7XG4gICAgICAgIGNvbnN0IHByb2plY3QgPSBwcm9jZXNzLmVudi5QT0xBUl9URVNUX1BST0pFQ1QgfHwgXCJwb2xhci1jb3JzXCI7XG4gICAgICAgIHJldHVybiBgaHR0cHM6Ly91cy1jZW50cmFsMS0ke3Byb2plY3R9LmNsb3VkZnVuY3Rpb25zLm5ldGA7XG4gICAgfVxuXG59XG4iXX0=

@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const SpectronWebappMain_1 = require("../../js/test/SpectronWebappMain");
+const FilePaths_1 = require("polar-shared/src/util/FilePaths");
+const webRoot = FilePaths_1.FilePaths.join(__dirname, "..", "..", "..");
+const appRoot = __dirname;
+SpectronWebappMain_1.SpectronWebappMain.run({ webRoot, appRoot, path: "/web/spectron0/firebase-datastore/content.html" });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLHlFQUFvRTtBQUNwRSwrREFBMEQ7QUFFMUQsTUFBTSxPQUFPLEdBQUcscUJBQVMsQ0FBQyxJQUFJLENBQUMsU0FBUyxFQUFFLElBQUksRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUM7QUFDNUQsTUFBTSxPQUFPLEdBQUcsU0FBUyxDQUFDO0FBRTFCLHVDQUFrQixDQUFDLEdBQUcsQ0FBQyxFQUFDLE9BQU8sRUFBRSxPQUFPLEVBQUUsSUFBSSxFQUFFLGdEQUFnRCxFQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7U3BlY3Ryb25XZWJhcHBNYWlufSBmcm9tICcuLi8uLi9qcy90ZXN0L1NwZWN0cm9uV2ViYXBwTWFpbic7XG5pbXBvcnQge0ZpbGVQYXRoc30gZnJvbSAncG9sYXItc2hhcmVkL3NyYy91dGlsL0ZpbGVQYXRocyc7XG5cbmNvbnN0IHdlYlJvb3QgPSBGaWxlUGF0aHMuam9pbihfX2Rpcm5hbWUsIFwiLi5cIiwgXCIuLlwiLCBcIi4uXCIpO1xuY29uc3QgYXBwUm9vdCA9IF9fZGlybmFtZTtcblxuU3BlY3Ryb25XZWJhcHBNYWluLnJ1bih7d2ViUm9vdCwgYXBwUm9vdCwgcGF0aDogXCIvd2ViL3NwZWN0cm9uMC9maXJlYmFzZS1kYXRhc3RvcmUvY29udGVudC5odG1sXCJ9KTtcbiJdfQ==

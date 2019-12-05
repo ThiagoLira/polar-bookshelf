@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class AreaHighlightElements {
+}
+exports.AreaHighlightElements = AreaHighlightElements;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJlYUhpZ2hsaWdodEVsZW1lbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQXJlYUhpZ2hsaWdodEVsZW1lbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBYSxxQkFBcUI7Q0FFakM7QUFGRCxzREFFQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBBcmVhSGlnaGxpZ2h0RWxlbWVudHMge1xuXG59XG4iXX0=

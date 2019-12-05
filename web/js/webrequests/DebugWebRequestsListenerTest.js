@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+describe('DebugWebRequestsListener', function () {
+    describe('Test method call', function () {
+        xit("basic", function () {
+        });
+    });
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVidWdXZWJSZXF1ZXN0c0xpc3RlbmVyVGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRlYnVnV2ViUmVxdWVzdHNMaXN0ZW5lclRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxRQUFRLENBQUMsMEJBQTBCLEVBQUU7SUFFakMsUUFBUSxDQUFDLGtCQUFrQixFQUFFO1FBRXpCLEdBQUcsQ0FBQyxPQUFPLEVBQUU7UUFFYixDQUFDLENBQUMsQ0FBQztJQUVQLENBQUMsQ0FBQyxDQUFDO0FBRVAsQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0RlYnVnV2ViUmVxdWVzdHNMaXN0ZW5lcn0gZnJvbSAnLi9EZWJ1Z1dlYlJlcXVlc3RzTGlzdGVuZXInO1xuXG5kZXNjcmliZSgnRGVidWdXZWJSZXF1ZXN0c0xpc3RlbmVyJywgZnVuY3Rpb24oKSB7XG5cbiAgICBkZXNjcmliZSgnVGVzdCBtZXRob2QgY2FsbCcsIGZ1bmN0aW9uKCkge1xuXG4gICAgICAgIHhpdChcImJhc2ljXCIsIGZ1bmN0aW9uICgpIHtcbiAgICAgICAgICAgIC8vbmV3IERlYnVnV2ViUmVxdWVzdHNMaXN0ZW5lcigpLm9uV2ViUmVxdWVzdEV2ZW50KHsgdGVzdDogXCJ0ZXN0XCIgfSlcbiAgICAgICAgfSk7XG5cbiAgICB9KTtcblxufSk7XG4iXX0=

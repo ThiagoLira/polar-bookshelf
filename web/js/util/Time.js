@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Time {
+    static sleep(interval) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve();
+            }, interval);
+        });
+    }
+}
+exports.Time = Time;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRpbWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFhLElBQUk7SUFRYixNQUFNLENBQUMsS0FBSyxDQUFDLFFBQWdCO1FBRXpCLE9BQU8sSUFBSSxPQUFPLENBQUMsT0FBTyxDQUFDLEVBQUU7WUFDekIsVUFBVSxDQUFDLEdBQUcsRUFBRTtnQkFDWixPQUFPLEVBQUUsQ0FBQztZQUNkLENBQUMsRUFBRSxRQUFRLENBQUMsQ0FBQztRQUNqQixDQUFDLENBQUMsQ0FBQTtJQUVOLENBQUM7Q0FFSjtBQWxCRCxvQkFrQkMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEZ1bmN0aW9ucyByZWxhdGVkIHRvIHRpbWUuXG4gKi9cbmV4cG9ydCBjbGFzcyBUaW1lIHtcblxuICAgIC8qKlxuICAgICAqIFByb21pc2UgdG8gc2xlZXAgZm9yIGEgZ2l2ZW4gaW50ZXJ2YWwuXG4gICAgICpcbiAgICAgKiBAcGFyYW0gaW50ZXJ2YWxcbiAgICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59XG4gICAgICovXG4gICAgc3RhdGljIHNsZWVwKGludGVydmFsOiBudW1iZXIpIHtcblxuICAgICAgICByZXR1cm4gbmV3IFByb21pc2UocmVzb2x2ZSA9PiAge1xuICAgICAgICAgICAgc2V0VGltZW91dCgoKSA9PiB7XG4gICAgICAgICAgICAgICAgcmVzb2x2ZSgpO1xuICAgICAgICAgICAgfSwgaW50ZXJ2YWwpO1xuICAgICAgICB9KVxuXG4gICAgfVxuXG59XG4iXX0=

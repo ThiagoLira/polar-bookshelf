@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const CIDProvider_1 = require("./CIDProvider");
+class RendererAnalyticsService {
+    start() {
+        global.cidProvider = new CIDProvider_1.CIDProvider(undefined);
+    }
+}
+exports.RendererAnalyticsService = RendererAnalyticsService;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVuZGVyZXJBbmFseXRpY3NTZXJ2aWNlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVuZGVyZXJBbmFseXRpY3NTZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsK0NBQTBDO0FBTzFDLE1BQWEsd0JBQXdCO0lBRTFCLEtBQUs7UUFFUixNQUFNLENBQUMsV0FBVyxHQUFHLElBQUkseUJBQVcsQ0FBQyxTQUFTLENBQUMsQ0FBQztJQUVwRCxDQUFDO0NBRUo7QUFSRCw0REFRQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q0lEUHJvdmlkZXJ9IGZyb20gXCIuL0NJRFByb3ZpZGVyXCI7XG5cbmRlY2xhcmUgdmFyIGdsb2JhbDogYW55O1xuXG4vKipcbiAqIEBFbGVjdHJvbk1haW5Db250ZXh0XG4gKi9cbmV4cG9ydCBjbGFzcyBSZW5kZXJlckFuYWx5dGljc1NlcnZpY2Uge1xuXG4gICAgcHVibGljIHN0YXJ0KCk6IHZvaWQge1xuXG4gICAgICAgIGdsb2JhbC5jaWRQcm92aWRlciA9IG5ldyBDSURQcm92aWRlcih1bmRlZmluZWQpO1xuXG4gICAgfVxuXG59XG4iXX0=

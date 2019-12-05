@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DistConfig = {
+    ENABLE_UPDATES: false,
+    ENABLE_PURCHASES: true
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU25hcFN0b3JlRGlzdENvbmZpZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNuYXBTdG9yZURpc3RDb25maWcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFYSxRQUFBLFVBQVUsR0FBZ0I7SUFFbkMsY0FBYyxFQUFFLEtBQUs7SUFDckIsZ0JBQWdCLEVBQUUsSUFBSTtDQUV6QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtJRGlzdENvbmZpZ30gZnJvbSAnLi9JRGlzdENvbmZpZyc7XG5cbmV4cG9ydCBjb25zdCBEaXN0Q29uZmlnOiBJRGlzdENvbmZpZyA9IHtcblxuICAgIEVOQUJMRV9VUERBVEVTOiBmYWxzZSxcbiAgICBFTkFCTEVfUFVSQ0hBU0VTOiB0cnVlXG5cbn07XG4iXX0=

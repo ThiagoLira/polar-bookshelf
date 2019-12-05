@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Dictionaries_1 = require("polar-shared/src/util/Dictionaries");
+function canonicalize(obj) {
+    delete obj.uuid;
+    const result = Dictionaries_1.Dictionaries.sorted(obj);
+    return result;
+}
+exports.canonicalize = canonicalize;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdGluZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRlc3RpbmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxxRUFBZ0U7QUFFaEUsU0FBZ0IsWUFBWSxDQUFJLEdBQU07SUFDbEMsT0FBYyxHQUFJLENBQUMsSUFBSSxDQUFDO0lBQ3hCLE1BQU0sTUFBTSxHQUFHLDJCQUFZLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ3hDLE9BQU8sTUFBTSxDQUFDO0FBQ2xCLENBQUM7QUFKRCxvQ0FJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RGljdGlvbmFyaWVzfSBmcm9tICdwb2xhci1zaGFyZWQvc3JjL3V0aWwvRGljdGlvbmFyaWVzJztcblxuZXhwb3J0IGZ1bmN0aW9uIGNhbm9uaWNhbGl6ZTxUPihvYmo6IFQpIHtcbiAgICBkZWxldGUgKDxhbnk+IG9iaikudXVpZDtcbiAgICBjb25zdCByZXN1bHQgPSBEaWN0aW9uYXJpZXMuc29ydGVkKG9iaik7XG4gICAgcmV0dXJuIHJlc3VsdDtcbn1cbiJdfQ==

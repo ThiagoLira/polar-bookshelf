@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const electron_1 = require("electron");
+const Preconditions_1 = require("polar-shared/src/Preconditions");
+class ElectronClipboard {
+    writeText(text) {
+        electron_1.clipboard.writeText(text);
+    }
+    static supported() {
+        return Preconditions_1.isPresent(electron_1.clipboard);
+    }
+}
+exports.ElectronClipboard = ElectronClipboard;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRWxlY3Ryb25DbGlwYm9hcmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFbGVjdHJvbkNsaXBib2FyZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLHVDQUFtQztBQUNuQyxrRUFBeUQ7QUFFekQsTUFBYSxpQkFBaUI7SUFFbkIsU0FBUyxDQUFDLElBQVk7UUFDekIsb0JBQVMsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDOUIsQ0FBQztJQUVNLE1BQU0sQ0FBQyxTQUFTO1FBQ25CLE9BQU8seUJBQVMsQ0FBQyxvQkFBUyxDQUFDLENBQUM7SUFDaEMsQ0FBQztDQUVKO0FBVkQsOENBVUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NsaXBib2FyZH0gZnJvbSAnLi4vQ2xpcGJvYXJkJztcbmltcG9ydCB7Y2xpcGJvYXJkfSBmcm9tIFwiZWxlY3Ryb25cIjtcbmltcG9ydCB7aXNQcmVzZW50fSBmcm9tICdwb2xhci1zaGFyZWQvc3JjL1ByZWNvbmRpdGlvbnMnO1xuXG5leHBvcnQgY2xhc3MgRWxlY3Ryb25DbGlwYm9hcmQgaW1wbGVtZW50cyBDbGlwYm9hcmR7XG5cbiAgICBwdWJsaWMgd3JpdGVUZXh0KHRleHQ6IHN0cmluZykge1xuICAgICAgICBjbGlwYm9hcmQud3JpdGVUZXh0KHRleHQpO1xuICAgIH1cblxuICAgIHB1YmxpYyBzdGF0aWMgc3VwcG9ydGVkKCkge1xuICAgICAgICByZXR1cm4gaXNQcmVzZW50KGNsaXBib2FyZCk7XG4gICAgfVxuXG59XG4iXX0=

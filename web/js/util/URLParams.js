@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class URLParams {
+    static createJSON(obj) {
+        return encodeURIComponent(JSON.stringify(obj));
+    }
+}
+exports.URLParams = URLParams;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVVJMUGFyYW1zLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVVJMUGFyYW1zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBYSxTQUFTO0lBS1gsTUFBTSxDQUFDLFVBQVUsQ0FBQyxHQUFRO1FBQzdCLE9BQU8sa0JBQWtCLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQ25ELENBQUM7Q0FFSjtBQVRELDhCQVNDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIFVSTFBhcmFtcyB7XG5cbiAgICAvKipcbiAgICAgKiBDcmVhdGUgYSBKU09OIGVuY29kZWQgcGFyYW0uXG4gICAgICovXG4gICAgcHVibGljIHN0YXRpYyBjcmVhdGVKU09OKG9iajogYW55KSB7XG4gICAgICAgIHJldHVybiBlbmNvZGVVUklDb21wb25lbnQoSlNPTi5zdHJpbmdpZnkob2JqKSk7XG4gICAgfVxuXG59XG4iXX0=

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Datastores_1 = require("./Datastores");
+class MainDatastore {
+    static create() {
+        const datastore = Datastores_1.Datastores.create();
+        global.datastore = datastore;
+        return datastore;
+    }
+}
+exports.MainDatastore = MainDatastore;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFpbkRhdGFzdG9yZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk1haW5EYXRhc3RvcmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBd0M7QUFLeEMsTUFBYSxhQUFhO0lBRWYsTUFBTSxDQUFDLE1BQU07UUFDaEIsTUFBTSxTQUFTLEdBQUcsdUJBQVUsQ0FBQyxNQUFNLEVBQUUsQ0FBQztRQUN0QyxNQUFNLENBQUMsU0FBUyxHQUFHLFNBQVMsQ0FBQztRQUM3QixPQUFPLFNBQVMsQ0FBQztJQUNyQixDQUFDO0NBRUo7QUFSRCxzQ0FRQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RGF0YXN0b3Jlc30gZnJvbSAnLi9EYXRhc3RvcmVzJztcbmltcG9ydCB7RGF0YXN0b3JlfSBmcm9tICcuL0RhdGFzdG9yZSc7XG5cbmRlY2xhcmUgdmFyIGdsb2JhbDogYW55O1xuXG5leHBvcnQgY2xhc3MgTWFpbkRhdGFzdG9yZSB7XG5cbiAgICBwdWJsaWMgc3RhdGljIGNyZWF0ZSgpOiBEYXRhc3RvcmUge1xuICAgICAgICBjb25zdCBkYXRhc3RvcmUgPSBEYXRhc3RvcmVzLmNyZWF0ZSgpO1xuICAgICAgICBnbG9iYWwuZGF0YXN0b3JlID0gZGF0YXN0b3JlO1xuICAgICAgICByZXR1cm4gZGF0YXN0b3JlO1xuICAgIH1cblxufVxuIl19

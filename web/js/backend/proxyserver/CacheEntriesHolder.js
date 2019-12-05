@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class CacheEntriesHolder {
+    constructor(opts) {
+        this.cacheEntries = {};
+        this.metadata = {};
+        this.metadata = {};
+        Object.assign(this, opts);
+    }
+}
+exports.CacheEntriesHolder = CacheEntriesHolder;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FjaGVFbnRyaWVzSG9sZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2FjaGVFbnRyaWVzSG9sZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBS0EsTUFBYSxrQkFBa0I7SUFNM0IsWUFBWSxJQUFTO1FBSmQsaUJBQVksR0FBZ0MsRUFBRSxDQUFDO1FBRS9DLGFBQVEsR0FBUSxFQUFFLENBQUM7UUFJdEIsSUFBSSxDQUFDLFFBQVEsR0FBRyxFQUFFLENBQUM7UUFFbkIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUM7SUFDOUIsQ0FBQztDQUVKO0FBYkQsZ0RBYUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEhvbGRzIHRoZSBjYWNoZWQgcmVxdWVzdHMgcGx1cyBvdGhlciBtZXRhZGF0YS5cbiAqL1xuaW1wb3J0IHtDYWNoZUVudHJ5fSBmcm9tICcuL0NhY2hlRW50cnknO1xuXG5leHBvcnQgY2xhc3MgQ2FjaGVFbnRyaWVzSG9sZGVyIHtcblxuICAgIHB1YmxpYyBjYWNoZUVudHJpZXM6IHtba2V5OiBzdHJpbmddOiBDYWNoZUVudHJ5fSA9IHt9O1xuXG4gICAgcHVibGljIG1ldGFkYXRhOiBhbnkgPSB7fTtcblxuICAgIGNvbnN0cnVjdG9yKG9wdHM6IGFueSkge1xuXG4gICAgICAgIHRoaXMubWV0YWRhdGEgPSB7fTtcblxuICAgICAgICBPYmplY3QuYXNzaWduKHRoaXMsIG9wdHMpO1xuICAgIH1cblxufVxuIl19

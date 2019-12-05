@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const ResourcePaths_1 = require("../../electron/webresource/ResourcePaths");
+class PersistenceLayerWorkers {
+    static create() {
+        let url = ResourcePaths_1.ResourcePaths.resourceURLFromRelativeURL("./web/js/datastore/dispatcher/PersistenceLayerWorker.js");
+        return new Worker(url);
+    }
+}
+exports.PersistenceLayerWorkers = PersistenceLayerWorkers;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGVyc2lzdGVuY2VMYXllcldvcmtlcnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJQZXJzaXN0ZW5jZUxheWVyV29ya2Vycy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDRFQUF1RTtBQUV2RSxNQUFhLHVCQUF1QjtJQUV6QixNQUFNLENBQUMsTUFBTTtRQUVoQixJQUFJLEdBQUcsR0FBRyw2QkFBYSxDQUFDLDBCQUEwQixDQUFDLHlEQUF5RCxDQUFDLENBQUE7UUFFN0csT0FBTyxJQUFJLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUMzQixDQUFDO0NBRUo7QUFURCwwREFTQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7UmVzb3VyY2VQYXRoc30gZnJvbSAnLi4vLi4vZWxlY3Ryb24vd2VicmVzb3VyY2UvUmVzb3VyY2VQYXRocyc7XG5cbmV4cG9ydCBjbGFzcyBQZXJzaXN0ZW5jZUxheWVyV29ya2VycyB7XG5cbiAgICBwdWJsaWMgc3RhdGljIGNyZWF0ZSgpOiBXb3JrZXIge1xuXG4gICAgICAgIGxldCB1cmwgPSBSZXNvdXJjZVBhdGhzLnJlc291cmNlVVJMRnJvbVJlbGF0aXZlVVJMKFwiLi93ZWIvanMvZGF0YXN0b3JlL2Rpc3BhdGNoZXIvUGVyc2lzdGVuY2VMYXllcldvcmtlci5qc1wiKVxuXG4gICAgICAgIHJldHVybiBuZXcgV29ya2VyKHVybCk7XG4gICAgfVxuXG59XG4iXX0=

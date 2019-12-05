@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class View {
+    constructor(model) {
+        this.model = model;
+    }
+}
+exports.View = View;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVmlldy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlZpZXcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFhLElBQUk7SUFJYixZQUFZLEtBQVk7UUFFcEIsSUFBSSxDQUFDLEtBQUssR0FBRyxLQUFLLENBQUM7SUFFdkIsQ0FBQztDQUVKO0FBVkQsb0JBVUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge01vZGVsfSBmcm9tICcuLi9tb2RlbC9Nb2RlbCc7XG5cblxuZXhwb3J0IGNsYXNzIFZpZXcge1xuXG4gICAgcHJvdGVjdGVkIG1vZGVsOiBNb2RlbDtcblxuICAgIGNvbnN0cnVjdG9yKG1vZGVsOiBNb2RlbCkge1xuXG4gICAgICAgIHRoaXMubW9kZWwgPSBtb2RlbDtcblxuICAgIH1cblxufVxuIl19

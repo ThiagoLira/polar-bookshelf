@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class FunctionalInterface {
+    static create(name, object) {
+        if (!object[name] && typeof object === "function") {
+            const functionalInterface = {};
+            functionalInterface[name] = object;
+            return functionalInterface;
+        }
+        return object;
+    }
+}
+exports.FunctionalInterface = FunctionalInterface;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRnVuY3Rpb25hbEludGVyZmFjZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkZ1bmN0aW9uYWxJbnRlcmZhY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxNQUFhLG1CQUFtQjtJQU1yQixNQUFNLENBQUMsTUFBTSxDQUFDLElBQVksRUFBRSxNQUFXO1FBRTFDLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksT0FBTyxNQUFNLEtBQUssVUFBVSxFQUFFO1lBQy9DLE1BQU0sbUJBQW1CLEdBQVEsRUFBRSxDQUFDO1lBQ3BDLG1CQUFtQixDQUFDLElBQUksQ0FBQyxHQUFHLE1BQU0sQ0FBQztZQUVuQyxPQUFPLG1CQUFtQixDQUFDO1NBQzlCO1FBRUQsT0FBTyxNQUFNLENBQUM7SUFFbEIsQ0FBQztDQUVKO0FBbkJELGtEQW1CQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBGdW5jdGlvbmFsSW50ZXJmYWNlIHtcblxuICAgIC8qKlxuICAgICAqIENyZWF0ZSBhIGZ1bmN0aW9uYWwgaW50ZXJmYWNlIGZvciB0aGUgZ2l2ZW4gb2JqZWN0IHNvIHRoYXQgYSBmdW5jdGlvbiBPUlxuICAgICAqIGFuIG9iamVjdCBjYW4gYmUgdXNlZC4gIFdlIHByZWZlciB0aGUgb2JqZWN0IGZvcm0uXG4gICAgICovXG4gICAgcHVibGljIHN0YXRpYyBjcmVhdGUobmFtZTogc3RyaW5nLCBvYmplY3Q6IGFueSkge1xuXG4gICAgICAgIGlmICghb2JqZWN0W25hbWVdICYmIHR5cGVvZiBvYmplY3QgPT09IFwiZnVuY3Rpb25cIikge1xuICAgICAgICAgICAgY29uc3QgZnVuY3Rpb25hbEludGVyZmFjZTogYW55ID0ge307XG4gICAgICAgICAgICBmdW5jdGlvbmFsSW50ZXJmYWNlW25hbWVdID0gb2JqZWN0O1xuXG4gICAgICAgICAgICByZXR1cm4gZnVuY3Rpb25hbEludGVyZmFjZTtcbiAgICAgICAgfVxuXG4gICAgICAgIHJldHVybiBvYmplY3Q7XG5cbiAgICB9XG5cbn1cbiJdfQ==

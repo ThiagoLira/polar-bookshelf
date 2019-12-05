@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Errors {
+    static rethrow(err, message) {
+        const msg = `${message}: ${err.message}`;
+        throw Object.assign({ msg }, err);
+    }
+}
+exports.Errors = Errors;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXJyb3JzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXJyb3JzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsTUFBYSxNQUFNO0lBT1IsTUFBTSxDQUFDLE9BQU8sQ0FBQyxHQUFVLEVBQUUsT0FBZTtRQUU3QyxNQUFNLEdBQUcsR0FBRyxHQUFHLE9BQU8sS0FBSyxHQUFHLENBQUMsT0FBTyxFQUFFLENBQUM7UUFDekMsTUFBTSxNQUFNLENBQUMsTUFBTSxDQUFDLEVBQUMsR0FBRyxFQUFDLEVBQUUsR0FBRyxDQUFDLENBQUM7SUFFcEMsQ0FBQztDQUVKO0FBZEQsd0JBY0MiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgRXJyb3JzIHtcblxuICAgIC8qKlxuICAgICAqIENyZWF0ZSBhIG5ldyBFcnJvciB3aXRoIGFuIHVwZGF0ZWQgbWVzc2FnZSBzbyBpdCBjYW4gYmUgcmV0aHJvd24uXG4gICAgICogQHBhcmFtIGVyclxuICAgICAqIEBwYXJhbSBtZXNzYWdlXG4gICAgICovXG4gICAgcHVibGljIHN0YXRpYyByZXRocm93KGVycjogRXJyb3IsIG1lc3NhZ2U6IHN0cmluZykge1xuXG4gICAgICAgIGNvbnN0IG1zZyA9IGAke21lc3NhZ2V9OiAke2Vyci5tZXNzYWdlfWA7XG4gICAgICAgIHRocm93IE9iamVjdC5hc3NpZ24oe21zZ30sIGVycik7XG5cbiAgICB9XG5cbn1cbiJdfQ==

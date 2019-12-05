@@ -1,0 +1,48 @@
+"use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __importStar(require("react"));
+const HighlightColor_1 = require("polar-shared/src/metadata/HighlightColor");
+const ResponsiveImg_1 = require("../../../../../../web/js/annotation_sidebar/ResponsiveImg");
+const DocFileResolvers_1 = require("../../../../../../web/js/datastore/DocFileResolvers");
+const Images_1 = require("../../../../../../web/js/metadata/Images");
+const Image = (props) => {
+    const { docAnnotationProfileRecord, persistenceLayerProvider } = props;
+    const docAnnotation = docAnnotationProfileRecord.value;
+    const areaHighlight = docAnnotation.original;
+    const docFileResolver = DocFileResolvers_1.DocFileResolvers.createForPersistenceLayer(persistenceLayerProvider);
+    const img = Images_1.Images.toImg(docFileResolver, areaHighlight.image);
+    if (img) {
+        return (React.createElement(ResponsiveImg_1.ResponsiveImg, { id: areaHighlight.id, img: img, color: areaHighlight.color }));
+    }
+    else {
+        return (React.createElement("div", null, "No image"));
+    }
+};
+class AreaHighlightDocAnnotationComponent extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+        this.state = {};
+    }
+    render() {
+        const { props } = this;
+        const { docAnnotationProfileRecord } = props;
+        const docAnnotation = docAnnotationProfileRecord.value;
+        const areaHighlight = docAnnotation.original;
+        const key = 'area-highlight' + docAnnotation.id;
+        const borderColor = HighlightColor_1.HighlightColors.toBackgroundColor(areaHighlight.color, 0.7);
+        return (React.createElement("div", { key: key, className: 'p-1' },
+            React.createElement("div", { style: {
+                    borderLeft: `5px solid ${borderColor}`
+                } },
+                React.createElement(Image, { persistenceLayerProvider: this.props.persistenceLayerProvider, docAnnotationProfileRecord: docAnnotationProfileRecord }))));
+    }
+}
+exports.AreaHighlightDocAnnotationComponent = AreaHighlightDocAnnotationComponent;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJlYUhpZ2hsaWdodERvY0Fubm90YXRpb25Db21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBcmVhSGlnaGxpZ2h0RG9jQW5ub3RhdGlvbkNvbXBvbmVudC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUEsNkNBQStCO0FBRS9CLDZFQUF5RTtBQUN6RSw2RkFBd0Y7QUFFeEYsMEZBQXFGO0FBRXJGLHFFQUFnRTtBQUloRSxNQUFNLEtBQUssR0FBRyxDQUFDLEtBQWEsRUFBRSxFQUFFO0lBRTVCLE1BQU0sRUFBQywwQkFBMEIsRUFBRSx3QkFBd0IsRUFBQyxHQUFHLEtBQUssQ0FBQztJQUNyRSxNQUFNLGFBQWEsR0FBRywwQkFBMEIsQ0FBQyxLQUFLLENBQUM7SUFFdkQsTUFBTSxhQUFhLEdBQUcsYUFBYSxDQUFDLFFBQTBCLENBQUM7SUFFL0QsTUFBTSxlQUFlLEdBQUcsbUNBQWdCLENBQUMseUJBQXlCLENBQUMsd0JBQXdCLENBQUMsQ0FBQztJQUU3RixNQUFNLEdBQUcsR0FBRyxlQUFNLENBQUMsS0FBSyxDQUFDLGVBQWUsRUFBRSxhQUFhLENBQUMsS0FBSyxDQUFDLENBQUM7SUFFL0QsSUFBSSxHQUFHLEVBQUU7UUFFTCxPQUFPLENBQ0gsb0JBQUMsNkJBQWEsSUFBQyxFQUFFLEVBQUUsYUFBYSxDQUFDLEVBQUUsRUFBRSxHQUFHLEVBQUUsR0FBRyxFQUFFLEtBQUssRUFBRSxhQUFhLENBQUMsS0FBSyxHQUFHLENBQy9FLENBQUM7S0FFTDtTQUFNO1FBQ0gsT0FBTyxDQUNILDRDQUFtQixDQUN0QixDQUFDO0tBQ0w7QUFFTCxDQUFDLENBQUM7QUFFRixNQUFhLG1DQUFvQyxTQUFRLEtBQUssQ0FBQyxTQUF5QjtJQUVwRixZQUFZLEtBQWEsRUFBRSxPQUFZO1FBQ25DLEtBQUssQ0FBQyxLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7UUFFdEIsSUFBSSxDQUFDLEtBQUssR0FBRyxFQUFFLENBQUM7SUFFcEIsQ0FBQztJQUVNLE1BQU07UUFDVCxNQUFNLEVBQUMsS0FBSyxFQUFDLEdBQUcsSUFBSSxDQUFDO1FBQ3JCLE1BQU0sRUFBQywwQkFBMEIsRUFBQyxHQUFHLEtBQUssQ0FBQztRQUMzQyxNQUFNLGFBQWEsR0FBRywwQkFBMEIsQ0FBQyxLQUFLLENBQUM7UUFFdkQsTUFBTSxhQUFhLEdBQUcsYUFBYSxDQUFDLFFBQTBCLENBQUM7UUFFL0QsTUFBTSxHQUFHLEdBQUcsZ0JBQWdCLEdBQUcsYUFBYSxDQUFDLEVBQUUsQ0FBQztRQUNoRCxNQUFNLFdBQVcsR0FBRyxnQ0FBZSxDQUFDLGlCQUFpQixDQUFDLGFBQWEsQ0FBQyxLQUFLLEVBQUUsR0FBRyxDQUFDLENBQUM7UUFFaEYsT0FBTyxDQUVILDZCQUFLLEdBQUcsRUFBRSxHQUFHLEVBQ1IsU0FBUyxFQUFDLEtBQUs7WUFFaEIsNkJBQUssS0FBSyxFQUFFO29CQUNSLFVBQVUsRUFBRSxhQUFhLFdBQVcsRUFBRTtpQkFDekM7Z0JBRUcsb0JBQUMsS0FBSyxJQUFDLHdCQUF3QixFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsd0JBQXdCLEVBQzdELDBCQUEwQixFQUFFLDBCQUEwQixHQUFHLENBRTlELENBRUosQ0FDVCxDQUFDO0lBRU4sQ0FBQztDQUVKO0FBdENELGtGQXNDQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7QmFzZURvY0Fubm90YXRpb259IGZyb20gXCIuLi8uLi8uLi8uLi8uLi8uLi93ZWIvanMvZGF0YXN0b3JlL3NoYXJpbmcvZGIvZG9jX2Fubm90YXRpb25zL0Jhc2VEb2NBbm5vdGF0aW9uXCI7XG5pbXBvcnQge0hpZ2hsaWdodENvbG9yc30gZnJvbSBcInBvbGFyLXNoYXJlZC9zcmMvbWV0YWRhdGEvSGlnaGxpZ2h0Q29sb3JcIjtcbmltcG9ydCB7UmVzcG9uc2l2ZUltZ30gZnJvbSBcIi4uLy4uLy4uLy4uLy4uLy4uL3dlYi9qcy9hbm5vdGF0aW9uX3NpZGViYXIvUmVzcG9uc2l2ZUltZ1wiO1xuaW1wb3J0IHtJQXJlYUhpZ2hsaWdodH0gZnJvbSBcInBvbGFyLXNoYXJlZC9zcmMvbWV0YWRhdGEvSUFyZWFIaWdobGlnaHRcIjtcbmltcG9ydCB7RG9jRmlsZVJlc29sdmVyc30gZnJvbSBcIi4uLy4uLy4uLy4uLy4uLy4uL3dlYi9qcy9kYXRhc3RvcmUvRG9jRmlsZVJlc29sdmVyc1wiO1xuaW1wb3J0IHtQZXJzaXN0ZW5jZUxheWVyUHJvdmlkZXJ9IGZyb20gXCIuLi8uLi8uLi8uLi8uLi8uLi93ZWIvanMvZGF0YXN0b3JlL1BlcnNpc3RlbmNlTGF5ZXJcIjtcbmltcG9ydCB7SW1hZ2VzfSBmcm9tIFwiLi4vLi4vLi4vLi4vLi4vLi4vd2ViL2pzL21ldGFkYXRhL0ltYWdlc1wiO1xuaW1wb3J0IHtQcm9maWxlUmVjb3JkfSBmcm9tIFwiLi4vLi4vLi4vLi4vLi4vLi4vd2ViL2pzL2RhdGFzdG9yZS9zaGFyaW5nL2RiL1Byb2ZpbGVKb2luc1wiO1xuaW1wb3J0IHtHcm91cERvY0Fubm90YXRpb259IGZyb20gXCIuLi8uLi8uLi8uLi8uLi8uLi93ZWIvanMvZGF0YXN0b3JlL3NoYXJpbmcvZGIvZG9jX2Fubm90YXRpb25zL0dyb3VwRG9jQW5ub3RhdGlvbnNcIjtcblxuY29uc3QgSW1hZ2UgPSAocHJvcHM6IElQcm9wcykgPT4ge1xuXG4gICAgY29uc3Qge2RvY0Fubm90YXRpb25Qcm9maWxlUmVjb3JkLCBwZXJzaXN0ZW5jZUxheWVyUHJvdmlkZXJ9ID0gcHJvcHM7XG4gICAgY29uc3QgZG9jQW5ub3RhdGlvbiA9IGRvY0Fubm90YXRpb25Qcm9maWxlUmVjb3JkLnZhbHVlO1xuXG4gICAgY29uc3QgYXJlYUhpZ2hsaWdodCA9IGRvY0Fubm90YXRpb24ub3JpZ2luYWwgYXMgSUFyZWFIaWdobGlnaHQ7XG5cbiAgICBjb25zdCBkb2NGaWxlUmVzb2x2ZXIgPSBEb2NGaWxlUmVzb2x2ZXJzLmNyZWF0ZUZvclBlcnNpc3RlbmNlTGF5ZXIocGVyc2lzdGVuY2VMYXllclByb3ZpZGVyKTtcblxuICAgIGNvbnN0IGltZyA9IEltYWdlcy50b0ltZyhkb2NGaWxlUmVzb2x2ZXIsIGFyZWFIaWdobGlnaHQuaW1hZ2UpO1xuXG4gICAgaWYgKGltZykge1xuXG4gICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICA8UmVzcG9uc2l2ZUltZyBpZD17YXJlYUhpZ2hsaWdodC5pZH0gaW1nPXtpbWd9IGNvbG9yPXthcmVhSGlnaGxpZ2h0LmNvbG9yfS8+XG4gICAgICAgICk7XG5cbiAgICB9IGVsc2Uge1xuICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgPGRpdj5ObyBpbWFnZTwvZGl2PlxuICAgICAgICApO1xuICAgIH1cblxufTtcblxuZXhwb3J0IGNsYXNzIEFyZWFIaWdobGlnaHREb2NBbm5vdGF0aW9uQ29tcG9uZW50IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50PElQcm9wcywgSVN0YXRlPiB7XG5cbiAgICBjb25zdHJ1Y3Rvcihwcm9wczogSVByb3BzLCBjb250ZXh0OiBhbnkpIHtcbiAgICAgICAgc3VwZXIocHJvcHMsIGNvbnRleHQpO1xuXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7fTtcblxuICAgIH1cblxuICAgIHB1YmxpYyByZW5kZXIoKSB7XG4gICAgICAgIGNvbnN0IHtwcm9wc30gPSB0aGlzO1xuICAgICAgICBjb25zdCB7ZG9jQW5ub3RhdGlvblByb2ZpbGVSZWNvcmR9ID0gcHJvcHM7XG4gICAgICAgIGNvbnN0IGRvY0Fubm90YXRpb24gPSBkb2NBbm5vdGF0aW9uUHJvZmlsZVJlY29yZC52YWx1ZTtcblxuICAgICAgICBjb25zdCBhcmVhSGlnaGxpZ2h0ID0gZG9jQW5ub3RhdGlvbi5vcmlnaW5hbCBhcyBJQXJlYUhpZ2hsaWdodDtcblxuICAgICAgICBjb25zdCBrZXkgPSAnYXJlYS1oaWdobGlnaHQnICsgZG9jQW5ub3RhdGlvbi5pZDtcbiAgICAgICAgY29uc3QgYm9yZGVyQ29sb3IgPSBIaWdobGlnaHRDb2xvcnMudG9CYWNrZ3JvdW5kQ29sb3IoYXJlYUhpZ2hsaWdodC5jb2xvciwgMC43KTtcblxuICAgICAgICByZXR1cm4gKFxuXG4gICAgICAgICAgICA8ZGl2IGtleT17a2V5fVxuICAgICAgICAgICAgICAgICBjbGFzc05hbWU9J3AtMSc+XG5cbiAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlckxlZnQ6IGA1cHggc29saWQgJHtib3JkZXJDb2xvcn1gXG4gICAgICAgICAgICAgICAgfX0+XG5cbiAgICAgICAgICAgICAgICAgICAgPEltYWdlIHBlcnNpc3RlbmNlTGF5ZXJQcm92aWRlcj17dGhpcy5wcm9wcy5wZXJzaXN0ZW5jZUxheWVyUHJvdmlkZXJ9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICBkb2NBbm5vdGF0aW9uUHJvZmlsZVJlY29yZD17ZG9jQW5ub3RhdGlvblByb2ZpbGVSZWNvcmR9Lz5cblxuICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKTtcblxuICAgIH1cblxufVxuaW50ZXJmYWNlIElQcm9wcyB7XG4gICAgcmVhZG9ubHkgcGVyc2lzdGVuY2VMYXllclByb3ZpZGVyOiBQZXJzaXN0ZW5jZUxheWVyUHJvdmlkZXI7XG4gICAgcmVhZG9ubHkgZG9jQW5ub3RhdGlvblByb2ZpbGVSZWNvcmQ6IFByb2ZpbGVSZWNvcmQ8QmFzZURvY0Fubm90YXRpb24+O1xufVxuXG5pbnRlcmZhY2UgSVN0YXRlIHtcbn1cblxuIl19

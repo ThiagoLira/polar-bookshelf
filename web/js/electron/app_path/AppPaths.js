@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const FilePaths_1 = require("polar-shared/src/util/FilePaths");
+const AppPath_1 = require("./AppPath");
+class AppPaths {
+    static requireRelative(relativePath) {
+        const entryPoint = FilePaths_1.FilePaths.join(AppPath_1.AppPath.get(), relativePath);
+        require(entryPoint);
+    }
+}
+exports.AppPaths = AppPaths;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwUGF0aHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBcHBQYXRocy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLCtEQUEwRDtBQUMxRCx1Q0FBa0M7QUFFbEMsTUFBYSxRQUFRO0lBRVYsTUFBTSxDQUFDLGVBQWUsQ0FBQyxZQUFvQjtRQUM5QyxNQUFNLFVBQVUsR0FBRyxxQkFBUyxDQUFDLElBQUksQ0FBQyxpQkFBTyxDQUFDLEdBQUcsRUFBRSxFQUFFLFlBQVksQ0FBQyxDQUFDO1FBQy9ELE9BQU8sQ0FBQyxVQUFVLENBQUMsQ0FBQztJQUN4QixDQUFDO0NBRUo7QUFQRCw0QkFPQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RmlsZVBhdGhzfSBmcm9tIFwicG9sYXItc2hhcmVkL3NyYy91dGlsL0ZpbGVQYXRoc1wiO1xuaW1wb3J0IHtBcHBQYXRofSBmcm9tIFwiLi9BcHBQYXRoXCI7XG5cbmV4cG9ydCBjbGFzcyBBcHBQYXRocyB7XG5cbiAgICBwdWJsaWMgc3RhdGljIHJlcXVpcmVSZWxhdGl2ZShyZWxhdGl2ZVBhdGg6IHN0cmluZykge1xuICAgICAgICBjb25zdCBlbnRyeVBvaW50ID0gRmlsZVBhdGhzLmpvaW4oQXBwUGF0aC5nZXQoKSwgcmVsYXRpdmVQYXRoKTtcbiAgICAgICAgcmVxdWlyZShlbnRyeVBvaW50KTtcbiAgICB9XG5cbn1cbiJdfQ==

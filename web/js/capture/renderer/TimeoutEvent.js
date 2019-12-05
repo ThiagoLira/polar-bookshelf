@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class TimeoutEvent {
+    constructor(opts) {
+        this.pending = 0;
+        this.timeout = 0;
+        Object.assign(this, opts);
+    }
+}
+exports.TimeoutEvent = TimeoutEvent;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZW91dEV2ZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGltZW91dEV2ZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBSUEsTUFBYSxZQUFZO0lBWXJCLFlBQVksSUFBUztRQVByQixZQUFPLEdBQVcsQ0FBQyxDQUFDO1FBS3BCLFlBQU8sR0FBVyxDQUFDLENBQUM7UUFHaEIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUM7SUFDOUIsQ0FBQztDQUVKO0FBaEJELG9DQWdCQyIsInNvdXJjZXNDb250ZW50IjpbIlxuLyoqXG4gKlxuICovXG5leHBvcnQgY2xhc3MgVGltZW91dEV2ZW50IHtcblxuICAgIC8qKlxuICAgICAqIFRoZSB0b3RhbCBwZW5kaW5nIG51bWJlciBvZiB0aW1lb3V0cy5cbiAgICAgKi9cbiAgICBwZW5kaW5nOiBudW1iZXIgPSAwO1xuXG4gICAgLyoqXG4gICAgICogVGhlIHRpbWVvdXQgZm9yIHRoaXMgcmVnaXN0ZXJlZCBjYWxsYmFjay5cbiAgICAgKi9cbiAgICB0aW1lb3V0OiBudW1iZXIgPSAwO1xuXG4gICAgY29uc3RydWN0b3Iob3B0czogYW55KSB7XG4gICAgICAgIE9iamVjdC5hc3NpZ24odGhpcywgb3B0cyk7XG4gICAgfVxuXG59XG4iXX0=

@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const buttonActive = {
+    outline: true,
+    color: 'primary'
+};
+const buttonInactive = {
+    outline: false,
+    color: 'light'
+};
+class Buttons {
+    static activeProps(active) {
+        return active ? buttonActive : buttonInactive;
+    }
+}
+exports.Buttons = Buttons;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dG9ucy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkJ1dHRvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFPQSxNQUFNLFlBQVksR0FBZ0I7SUFDOUIsT0FBTyxFQUFFLElBQUk7SUFDYixLQUFLLEVBQUUsU0FBUztDQUNuQixDQUFDO0FBRUYsTUFBTSxjQUFjLEdBQWdCO0lBQ2hDLE9BQU8sRUFBRSxLQUFLO0lBQ2QsS0FBSyxFQUFFLE9BQU87Q0FDakIsQ0FBQztBQUVGLE1BQWEsT0FBTztJQUVULE1BQU0sQ0FBQyxXQUFXLENBQUMsTUFBZTtRQUNyQyxPQUFPLE1BQU0sQ0FBQyxDQUFDLENBQUMsWUFBWSxDQUFDLENBQUMsQ0FBQyxjQUFjLENBQUM7SUFDbEQsQ0FBQztDQUVKO0FBTkQsMEJBTUMiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuZXhwb3J0IGludGVyZmFjZSBCdXR0b25Qcm9wcyB7XG4gICAgcmVhZG9ubHkgb3V0bGluZTogYm9vbGVhbjtcbiAgICByZWFkb25seSBjb2xvcjogJ3ByaW1hcnknIHwgJ2xpZ2h0Jztcbn1cblxuY29uc3QgYnV0dG9uQWN0aXZlOiBCdXR0b25Qcm9wcyA9IHtcbiAgICBvdXRsaW5lOiB0cnVlLFxuICAgIGNvbG9yOiAncHJpbWFyeSdcbn07XG5cbmNvbnN0IGJ1dHRvbkluYWN0aXZlOiBCdXR0b25Qcm9wcyA9IHtcbiAgICBvdXRsaW5lOiBmYWxzZSxcbiAgICBjb2xvcjogJ2xpZ2h0J1xufTtcblxuZXhwb3J0IGNsYXNzIEJ1dHRvbnMge1xuXG4gICAgcHVibGljIHN0YXRpYyBhY3RpdmVQcm9wcyhhY3RpdmU6IGJvb2xlYW4pOiBCdXR0b25Qcm9wcyB7XG4gICAgICAgIHJldHVybiBhY3RpdmUgPyBidXR0b25BY3RpdmUgOiBidXR0b25JbmFjdGl2ZTtcbiAgICB9XG5cbn1cbiJdfQ==

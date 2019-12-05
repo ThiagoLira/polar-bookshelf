@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const MainDatastore_1 = require("../../js/datastore/MainDatastore");
+const FilePaths_1 = require("polar-shared/src/util/FilePaths");
+const SpectronWebappMain_1 = require("../../js/test/SpectronWebappMain");
+const webRoot = FilePaths_1.FilePaths.join(__dirname, "..", "..", "..");
+const appRoot = __dirname;
+const rewrites = [
+    {
+        source: "/",
+        destination: "web/spectron0/repository-app/app.html"
+    }
+];
+MainDatastore_1.MainDatastore.create();
+SpectronWebappMain_1.SpectronWebappMain.run({ webRoot, appRoot, path: "/", rewrites });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG9FQUErRDtBQUMvRCwrREFBMEQ7QUFDMUQseUVBQW9FO0FBR3BFLE1BQU0sT0FBTyxHQUFHLHFCQUFTLENBQUMsSUFBSSxDQUFDLFNBQVMsRUFBRSxJQUFJLEVBQUUsSUFBSSxFQUFFLElBQUksQ0FBQyxDQUFDO0FBQzVELE1BQU0sT0FBTyxHQUFHLFNBQVMsQ0FBQztBQUUxQixNQUFNLFFBQVEsR0FBMkI7SUFDckM7UUFDSSxNQUFNLEVBQUUsR0FBRztRQUNYLFdBQVcsRUFBRSx1Q0FBdUM7S0FDdkQ7Q0FDSixDQUFDO0FBRUYsNkJBQWEsQ0FBQyxNQUFNLEVBQUUsQ0FBQztBQUV2Qix1Q0FBa0IsQ0FBQyxHQUFHLENBQUMsRUFBQyxPQUFPLEVBQUUsT0FBTyxFQUFFLElBQUksRUFBRSxHQUFHLEVBQUUsUUFBUSxFQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7TWFpbkRhdGFzdG9yZX0gZnJvbSAnLi4vLi4vanMvZGF0YXN0b3JlL01haW5EYXRhc3RvcmUnO1xuaW1wb3J0IHtGaWxlUGF0aHN9IGZyb20gXCJwb2xhci1zaGFyZWQvc3JjL3V0aWwvRmlsZVBhdGhzXCI7XG5pbXBvcnQge1NwZWN0cm9uV2ViYXBwTWFpbn0gZnJvbSBcIi4uLy4uL2pzL3Rlc3QvU3BlY3Ryb25XZWJhcHBNYWluXCI7XG5pbXBvcnQge1Jld3JpdGV9IGZyb20gXCJwb2xhci1zaGFyZWQtd2Vic2VydmVyL3NyYy93ZWJzZXJ2ZXIvUmV3cml0ZXNcIjtcblxuY29uc3Qgd2ViUm9vdCA9IEZpbGVQYXRocy5qb2luKF9fZGlybmFtZSwgXCIuLlwiLCBcIi4uXCIsIFwiLi5cIik7XG5jb25zdCBhcHBSb290ID0gX19kaXJuYW1lO1xuXG5jb25zdCByZXdyaXRlczogUmVhZG9ubHlBcnJheTxSZXdyaXRlPiA9IFtcbiAgICB7XG4gICAgICAgIHNvdXJjZTogXCIvXCIsXG4gICAgICAgIGRlc3RpbmF0aW9uOiBcIndlYi9zcGVjdHJvbjAvcmVwb3NpdG9yeS1hcHAvYXBwLmh0bWxcIlxuICAgIH1cbl07XG5cbk1haW5EYXRhc3RvcmUuY3JlYXRlKCk7XG5cblNwZWN0cm9uV2ViYXBwTWFpbi5ydW4oe3dlYlJvb3QsIGFwcFJvb3QsIHBhdGg6IFwiL1wiLCByZXdyaXRlc30pO1xuIl19
